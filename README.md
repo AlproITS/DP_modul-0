@@ -509,13 +509,13 @@ y = x + x; // y = 14
 Seperti namanya, operator aritmatika melakukan operasi layaknya pada matematika seperti penjumlahan, pengurangan, pembagian dsb. Beberapa operator menggunakan simbol yang sama pada matematika (penjumlahan dengan simbol `‘+’`, pengurangan dengan `‘-‘`, dst.). Operator-operator aritmatika pada bahasa C adalah sebagai berikut.
 
 
-| Simbol | Operasi                                               | Contoh |
-| ------ | ----------------------------------------------------- | ------ |
-| +      | Penjumlahan pada dua operan                           | a + b  |
-| -      | Pengurangan pada dua operan                           | a - b  |
-| *      | Perkalian pada dua operan                             | a * b  |
-| /      | Pembagian pada dua operan                             | a / b  |
-| %      | Menghitung sisa pembagian dua operan (operasi modulo) | a ^ b  |
+| Simbol | Operasi                                               | Contoh   |
+| ------ | ----------------------------------------------------- | ------   |
+| +      | Penjumlahan pada dua operan                           | `a + b`  |
+| -      | Pengurangan pada dua operan                           | `a - b`  |
+| *      | Perkalian pada dua operan                             | `a * b`  |
+| /      | Pembagian pada dua operan                             | `a / b`  |
+| %      | Menghitung sisa pembagian dua operan (operasi modulo) | `a % b`  |
 
 ## Operator Gabungan
 
