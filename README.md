@@ -339,8 +339,6 @@ Penggunaan paling umum dari tipe data di atas adalah untuk merepresentasikan sat
 
 # Input dan Output Dasar
 
-> Pembahasan input dan output pada chapter ini hanya terbatas pada input dari keyboard (STDIN) dan output pada layar (STDOUT).
-
 Program yang kita buat dapat dibuat menjadi program yang interaktif. Kita dapat menginstruksikannya untuk menerima input (dari keyboard) lalu menampilkan hasil output (pada konsol layar). Fungsi-fungsi yang berkaitan dengan input/output ada di dalam library `<stdio.h>` (standard input output).
 
 ## Output Dasar
@@ -364,7 +362,6 @@ Output
 ```
 Ini adalah sebuah string
 ```
-
 
 Kita juga dapat menambahkan escape sequence pada string. Misalkan, kita ubah statement `printf()` di atas menjadi :
 
@@ -431,7 +428,7 @@ Output
  
 Perhatikan Ilustrasi di bawah.
  
-![Oi ini nanti gambar]()
+![Oi ini nanti gambar](/img/pict_printf.png)
 
 Dengan menyertakan format specifier dari tipe data yang bersesuaian, kita dapat mencetak nilai dari variabel tersebut. 
 + Fungsi `printf()` di atas mencetak string dengan nilai dua variabel (dua format specifier yang dipisahkan spasi).
@@ -482,10 +479,6 @@ Output
 ```
 n mempunyai nilai = 3
 ```
- 
-> Perlu diperhatikan bahwa fungsi `scanf()` akan berhenti membaca input ketika menjumpai whitespace (apabila mengetikkan spasi, new line, dan tab). Jadi apabila pada program sebelumnya kita meng-inputkan :
-> 124 432
-> maka nilai yang terbaca hanyalah 124 karena setelah itu dipisahkan oleh spasi yang menyebabkan fungsi `scanf()` berhenti membaca input.
 
 # Operator
 
