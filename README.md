@@ -593,7 +593,7 @@ Terdapat 6 jenis operator bitwise, yakni **AND**, **OR**, **XOR**, **COMPELEMENT
 
 **Contoh penggunaan operator bitwise :**
 
-Misal 12 dan 5. Representasi 12 dan 5 dalam basis biner adalah 12 = 11002 dan 5 = 01012. Maka, operasi bitwise adalah sebagai berikut.
+Misal 12 dan 5. Representasi 12 dan 5 dalam basis biner adalah 12 = 1100 dan 5 = 0101. Maka, operasi bitwise adalah sebagai berikut.
 
 + **Bitwise AND**
 
