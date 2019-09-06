@@ -226,9 +226,9 @@ Berikut adalah jenis-jenis literal dalam bahasa C.
 ### Bilangan Bulat
 
 Terdapat tiga cara untuk menuliskan literal bilangan bulat. Yakni menggunakan basis 10 (desimal), basis 8 (oktal) dan basis 16 (heksadesimal).
-| Desimal - ditulis seperti bilangan pada umumnya. Contohnya 100, -22.
-| Oktal - diawali dengan angka “0”, kemudian diikuti bilangan oktal. Contohnya 077, 033.
-| Heksadesimal - diawali dengan “0x”, kemudian diikuti bilangan heksadesimal. Contohnya 0x7f, 0x521.
++ **Desimal** - ditulis seperti bilangan pada umumnya. Contohnya `100, -22`.
++ **Oktal** - diawali dengan angka “0”, kemudian diikuti bilangan oktal. Contohnya `077, 033`.
++ **Heksadesimal** - diawali dengan “0x”, kemudian diikuti bilangan heksadesimal. Contohnya `0x7f, 0x521`.
 
 ### Bilangan Real (floating)
 
@@ -510,7 +510,7 @@ Seperti namanya, operator aritmatika melakukan operasi layaknya pada matematika 
 
 
 | Simbol | Operasi                                               | Contoh   |
-| ------ | ----------------------------------------------------- | ------   |
+| :----: | ----------------------------------------------------- | :------: |
 | +      | Penjumlahan pada dua operan                           | `a + b`  |
 | -      | Pengurangan pada dua operan                           | `a - b`  |
 | *      | Perkalian pada dua operan                             | `a * b`  |
