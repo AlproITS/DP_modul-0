@@ -559,14 +559,14 @@ Operator relasional digunakan untuk memeriksa relasi dan membandingkan nilai dar
 
 Berikut adalah operator relasional dalam bahasa C.
 
-| Operator                | Simbol | Keterangan                                                                                            | Contoh                                           |
-| ----------------------- | :----: | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| Sama dengan             | ==     | Digunakan untuk memeriksa apakah kedua operan memiliki nilai yang sama.                               | 5 == 2 (FALSE)<br>5 == 5 (TRUE)                  |
-| Tidak Sama dengan       | !=     | Digunakan untuk memeriksa apakah kedua operan memiliki nilai yang tidak sama.                         | 5 != 2 (TRUE)<br>5 != 5 (FALSE)                  |
-| Lebih besar             | >      | Digunakan untuk membandingkan apakah operan pertama lebih besar nilainya dari operan kedua.           | 5 > 2 (TRUE)<br>5 > 5 (FALSE)<br>2 > 4 (FALSE)   |
-| Lebih kecil             | <      | Digunakan untuk membandingkan apakah operan pertama lebih kecil nilainya dari operan kedua.           | 5 < 2 (FALSE)<br>5 < 5 (FALSE)<br>2 < 4 (TRUE)   |
-| Lebih besar sama dengan | >=     | Digunakan untuk membandingkan apakah operan pertama lebih besar atau sama nilainya dari operan kedua. | 5 >= 2 (TRUE)<br>5 >= 5 (TRUE)<br>2 >= 4 (FALSE) |
-| Lebih kecil sama dengan | <=     | Digunakan untuk membandingkan apakah operan pertama lebih kecil atau sama nilainya dari operan kedua. | 5 <= 2 (FALSE)<br>5 <= 5 (TRUE)<br>2 <= 4 (TRUE) |
+| Operator                | Simbol   | Keterangan                                                                                            | Contoh                                           |
+| ----------------------- | :----:   | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Sama dengan             | `==`     | Digunakan untuk memeriksa apakah kedua operan memiliki nilai yang sama.                               | 5 == 2 (FALSE)<br>5 == 5 (TRUE)                  |
+| Tidak Sama dengan       | `!=`     | Digunakan untuk memeriksa apakah kedua operan memiliki nilai yang tidak sama.                         | 5 != 2 (TRUE)<br>5 != 5 (FALSE)                  |
+| Lebih besar             | `>`      | Digunakan untuk membandingkan apakah operan pertama lebih besar nilainya dari operan kedua.           | 5 > 2 (TRUE)<br>5 > 5 (FALSE)<br>2 > 4 (FALSE)   |
+| Lebih kecil             | `<`      | Digunakan untuk membandingkan apakah operan pertama lebih kecil nilainya dari operan kedua.           | 5 < 2 (FALSE)<br>5 < 5 (FALSE)<br>2 < 4 (TRUE)   |
+| Lebih besar sama dengan | `>=`     | Digunakan untuk membandingkan apakah operan pertama lebih besar atau sama nilainya dari operan kedua. | 5 >= 2 (TRUE)<br>5 >= 5 (TRUE)<br>2 >= 4 (FALSE) |
+| Lebih kecil sama dengan | `<=`     | Digunakan untuk membandingkan apakah operan pertama lebih kecil atau sama nilainya dari operan kedua. | 5 <= 2 (FALSE)<br>5 <= 5 (TRUE)<br>2 <= 4 (TRUE) |
 
 ## Operator Logika
 
@@ -574,11 +574,11 @@ Operator logika digunakan untuk melakukan tes pada kondisi/ekspresi, apakah kond
 
 Operator-operator logika dalam bahasa C adalah sebagai berikut.
 
-| Operator                | Simbol | Keterangan                                                                                            | Nilai Kebenaran                                      |
-| ----------------------- | :----: | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Logical AND             | &&     | Operator AND akan menghasilkan nilai TRUE jika kedua operan mempunyai nilai TRUE.                     | 1 && 1 = 1<br>0 && 1 = 0<br>1 && 0 = 0<br>0 && 0 = 0 |
-| Logical OR              | ||     | Operator OR akan menghasilkan nilai TRUE jika salah satu operan mempunyai nilai TRUE.                 | 1 || 1 = 1<br>0 || 1 = 1<br>1 || 0 = 1<br>0 || 0 = 0 |
-| Logical NOT             | !      | Operator NOT digunakan untuk membalikkan kondisi, TRUE menjadi FALSE dan FALSE menjadi TRUE.          | !1 = 0<br>!0 = 1                                     |
+| Operator                | Simbol   | Keterangan                                                                                            | Nilai Kebenaran                                              |
+| ----------------------- |:------:  | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Logical AND             | `&&`     | Operator AND akan menghasilkan nilai TRUE jika kedua operan mempunyai nilai TRUE.                     | `1 && 1 = 1`<br>`0 && 1 = 0`<br>`1 && 0 = 0`<br>`0 && 0 = 0` |
+| Logical OR              | `||`     | Operator OR akan menghasilkan nilai TRUE jika salah satu operan mempunyai nilai TRUE.                 | `1 || 1 = 1`<br>`0 || 1 = 1`<br>`1 || 0 = 1`<br>`0 || 0 = 0` |
+| Logical NOT             | `!`      | Operator NOT digunakan untuk membalikkan kondisi, TRUE menjadi FALSE dan FALSE menjadi TRUE.          | `!1 = 0`<br>`!0 = 1`                                         |
 
 > Operator Logika **NOT** merupakan operator unary yang artinya hanya pada bekerja pada satu operan
 
