@@ -576,9 +576,9 @@ Operator-operator logika dalam bahasa C adalah sebagai berikut.
 
 | Operator                | Simbol   | Keterangan                                                                                            | Nilai Kebenaran                                              |
 | ----------------------- |:------:  | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Logical NOT             | `!`      | Operator NOT digunakan untuk membalikkan kondisi, TRUE menjadi FALSE dan FALSE menjadi TRUE.          | `!1 = 0`<br>`!0 = 1`                                         |
 | Logical AND             | `&&`     | Operator AND akan menghasilkan nilai TRUE jika kedua operan mempunyai nilai TRUE.                     | `1 && 1 = 1`<br>`0 && 1 = 0`<br>`1 && 0 = 0`<br>`0 && 0 = 0` |
 | Logical OR              | `||`     | Operator OR akan menghasilkan nilai TRUE jika salah satu operan mempunyai nilai TRUE.                 | `1 || 1 = 1`<br>`0 || 1 = 1`<br>`1 || 0 = 1`<br>`0 || 0 = 0` |
-| Logical NOT             | `!`      | Operator NOT digunakan untuk membalikkan kondisi, TRUE menjadi FALSE dan FALSE menjadi TRUE.          | `!1 = 0`<br>`!0 = 1`                                         |
 
 > Operator Logika **NOT** merupakan operator unary yang artinya hanya pada bekerja pada satu operan
 
