@@ -1,3 +1,50 @@
+## Daftar Isi
+-----------------------
+- [Pengenalan Bahasa C](#pengenalan-bahasa-c)
+
+    + [Statement](#statement)
+    + [Program "Hello, world."](#program-hello-world)
+    + [Struktur Program](#struktur-program)
+    + [Komentar](#komentar)
+
+- [Keyword dan Identifier](#keyword-dan-identifier)
+
+    + [Keyword](#keyword)
+    + [Identifier](#identifier)
+
+- [Variabel](#variabel)
+
+    + [Pengenalan Variabel](#pengenalan-variabel)
+    + [Deklarasi dan Definisi Variabel](#deklarasi-dan-definisi-variabel)
+    + [Pengisian Nilai Variabel](#pengisian-nilai-variabel)
+    + [Inisialisasi Variabel](#inisialisasi-variabel)
+
+- [Konstanta dan Literal](#konstanta-dan-literal)
+
+    + [Konstanta dan Literal](#konstanta-dan-literal-1)
+    + [Mendefinisikan Konstanta](#mendefinisikan-konstanta)
+
+- [Tipe Data Dasar](#tipe-data-dasar)
+
+    + [Tipe Bilangan Bulat (integer)](#tipe-bilangan-bulat-integer)
+    + [Tipe Bilangan Real (floating)](#tipe-bilangan-real-floating)
+    + [Tipe Karakter](#tipe-karakter)
+
+- [Input dan Output Dasar](#input-dan-output-dasar)
+
+    + [Outpur Dasar](#output-dasar)
+    + [Input Dasar](#input-dasar)
+
+- [Operator](#operator)
+
+    + [Operator Assignment](#operator-assignment)
+    + [Operator Aritmatika](#operator-aritmatika)
+    + [Operator Increment dan Decrement](#operator-increment-dan-decrement)
+    + [Operator Relasional](#operator-relasional)
+    + [Operator Logika](#operator-logika)
+    + [Operator Bitwise](#operator-bitwise)
+    + [Operator Gabungan](#operator-gabungan)
+
 # Pengenalan Bahasa C
 
 ## Statement
@@ -24,7 +71,7 @@ int main()
 Salinlah kode di atas pada IDE, kemudian compile dan jalankan. Akan menghasilkan output berikut.
 
 ```
-Hello, world!\n"
+Hello, world!
 ```
 
 ## Struktur Program
@@ -102,6 +149,7 @@ Semua yang berada di sini akan
 diabaikan 
 */  
 ```
+[< Kembali ke Daftar Isi](#daftar-isi)
 
 # Keyword dan Identifier
 
@@ -132,6 +180,8 @@ Aturan penamaan identifier :
 + Identifier tidak boleh mengandung whitespace.
 + Identifier harus dimulai dengan huruf atau simbol underscore. Tidak boleh dimulai dengan digit/angka.
 + Bersifat case-sensitive, artinya identifier `variable` berbeda dengan `vAriaBle`.
+
+[< Kembali ke Daftar Isi](#daftar-isi)
 
 # Variabel
 
@@ -200,6 +250,7 @@ Contoh :
 ```c
 int x = 10;
 ```
+[< Kembali ke Daftar Isi](#daftar-isi)
 
 # Konstanta dan Literal
 
@@ -304,6 +355,7 @@ int main()
     double b = konstDouble;  
 }  
 ```
+[< Kembali ke Daftar Isi](#daftar-isi)
 
 # Tipe Data Dasar
 
@@ -336,6 +388,8 @@ Karakter dalam bahasa C sebenarnya adalah bilangan bulat. Setiap karakter mempun
 **TABEL**
 
 Penggunaan paling umum dari tipe data di atas adalah untuk merepresentasikan satu karakter. Misalnya, `‘A’`, `‘-‘`, dan sebagainya.
+
+[< Kembali ke Daftar Isi](#daftar-isi)
 
 # Input dan Output Dasar
 
@@ -479,6 +533,7 @@ Output
 ```
 n mempunyai nilai = 3
 ```
+[< Kembali ke Daftar Isi](#daftar-isi)
 
 # Operator
 
