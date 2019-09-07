@@ -37,7 +37,7 @@ Baris 1 pada kode di atas disebut dengan preprocessor directive. Preprocessor ya
 
 Preprocessor `#include` menjelaskan bahwa program tersebut menyertakan file header `<stdio.h>`. File header  tersebut merupakan library bawaan C yang berisi fungsi-fungsi penting yang dibutuhkan oleh program, misalnya pada kasus ini, program membutuhkan fungsi `printf()` untuk mencetak kalimat **“Hello, world!”**. Tanpa adanya library, program tersebut tidak akan bisa di-compile.
 
-### Fungsi main()
+### Fungsi `main()`
 
 Fungsi `main()` pada kode tersebut ditunjukan pada baris ke 3 hingga baris ke 7.
 
@@ -232,7 +232,7 @@ Terdapat tiga cara untuk menuliskan literal bilangan bulat. Yakni menggunakan ba
 
 ### Bilangan Real (floating)
 
-Bilangan real (floating) dituliskan dengan menggunakan pemisah tanda titik (.) antara bilangan bulat dan bilangan pecahannya. Contohnya 2.321, -11.22, 0.00012.
+Bilangan real (floating) dituliskan dengan menggunakan pemisah tanda titik (.) antara bilangan bulat dan bilangan pecahannya. Contohnya `2.321, -11.22, 0.00012`.
 
 ### Karakter
 
@@ -400,7 +400,7 @@ Contoh-contoh di atas adalah contoh untuk mencetak string tetap. Lalu bagaimana 
 ### Output Dengan Format Specifier
 
 Untuk mencetak nilai dari suatu variabel, kita perlu menambahkan argumen pada fungsi `printf()`. Argumen pertama pada fungsi `printf()` selalu berupa string. Kita dapat memasukkan variabel/nilai pada argumen ke-2, 3, 4 dan seterusnya sesuai kebutuhan.
-Ingat, pada chapter Tipe Data Dasar, setiap tipe data mempunyai format specifier masing-masing. Nah, format specifier inilah yang akan kita gunakan untuk mencetak nilai dari suatu variabel.
+Ingat, pada chapter [Tipe Data Dasar](#tipe-data-dasar), setiap tipe data mempunyai format specifier masing-masing. Nah, format specifier inilah yang akan kita gunakan untuk mencetak nilai dari suatu variabel.
  
 ```
 printf(“<format string>”, var1, var2, var3, ... dst);
@@ -508,24 +508,17 @@ y = x + x; // y = 14
 
 Seperti namanya, operator aritmatika melakukan operasi layaknya pada matematika seperti penjumlahan, pengurangan, pembagian dsb. Beberapa operator menggunakan simbol yang sama pada matematika (penjumlahan dengan simbol `‘+’`, pengurangan dengan `‘-‘`, dst.). Operator-operator aritmatika pada bahasa C adalah sebagai berikut.
 
-
 | Simbol | Operasi                                               | Contoh   |
-| :----: | ----------------------------------------------------- | :------: |
+|:------:| ----------------------------------------------------- | :------: |
 | +      | Penjumlahan pada dua operan                           | `a + b`  |
 | -      | Pengurangan pada dua operan                           | `a - b`  |
 | *      | Perkalian pada dua operan                             | `a * b`  |
 | /      | Pembagian pada dua operan                             | `a / b`  |
 | %      | Menghitung sisa pembagian dua operan (operasi modulo) | `a % b`  |
 
-## Operator Gabungan
-
-Operator Gabungan adalah operator yang terdiri dari gabungan dua operator. Tujuan dari operator gabungan adalah untuk mempersingkat penulisan kode. Berikut adalah operator gabungan dalam bahasa C.
-
-**TABEL**
-
 ## Operator Increment dan Decrement
 
-Operator `++` disebut dengan operator increment, sedangkan operator -- merupakan operator decrement. Kedua operator ini digunakan untuk menambah (increment)/mengurangi (decrement) nilai dari suatu variabel sebanyak `satu`.
+Operator `++` disebut dengan operator **increment**, sedangkan operator `--` merupakan operator **decrement**. Kedua operator ini digunakan untuk menambah (increment)/mengurangi (decrement) nilai dari suatu variabel sebanyak satu.
 
 Terdapat dua cara untuk menggunakan operator ini.
 
@@ -535,7 +528,7 @@ Terdapat dua cara untuk menggunakan operator ini.
     int a, b;  
     a = 5;  
     ++a; // Nilai a sekarang adalah 6  
-    --a; // Nilai a sekarang adalah 5 
+    --a; // Nilai a sekarang adalah 5
     ```
 
     Cara kerja dari operator increment/decrement prefix adalah dengan menambahkan/mengurangi nilai variabel sebanyak satu terlebih dahulu, sebelum operan tersebut digunakan pada operasi lainnya pada sekuens intstruksi yang sama. Untuk lebih jelasnya, perhatikan potongan kode berikut
@@ -562,11 +555,18 @@ Terdapat dua cara untuk menggunakan operator ini.
 
 ## Operator Relasional
 
-Operator relasional digunakan untuk memeriksa relasi dan membandingkan nilai dari dua operan. Jika benar akan menghasilkan nilai TRUE (direpresentasikan angka 1), jika salah maka akan menghasilkan nilai FALSE (direpresentasikan angka 0).
+Operator relasional digunakan untuk memeriksa relasi dan membandingkan nilai dari dua operan. Jika benar akan menghasilkan nilai **TRUE** (direpresentasikan angka 1), jika salah maka akan menghasilkan nilai **FALSE** (direpresentasikan angka 0).
 
 Berikut adalah operator relasional dalam bahasa C.
 
-**TABEL**
+| Operator                | Simbol | Keterangan                                                                                            | Contoh                                           |
+| ----------------------- | :----: | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Sama dengan             | ==     | Digunakan untuk memeriksa apakah kedua operan memiliki nilai yang sama.                               | 5 == 2 (FALSE)<br>5 == 5 (TRUE)                  |
+| Tidak Sama dengan       | !=     | Digunakan untuk memeriksa apakah kedua operan memiliki nilai yang tidak sama.                         | 5 != 2 (TRUE)<br>5 != 5 (FALSE)                  |
+| Lebih besar             | >      | Digunakan untuk membandingkan apakah operan pertama lebih besar nilainya dari operan kedua.           | 5 > 2 (TRUE)<br>5 > 5 (FALSE)<br>2 > 4 (FALSE)   |
+| Lebih kecil             | <      | Digunakan untuk membandingkan apakah operan pertama lebih kecil nilainya dari operan kedua.           | 5 < 2 (FALSE)<br>5 < 5 (FALSE)<br>2 < 4 (TRUE)   |
+| Lebih besar sama dengan | >=     | Digunakan untuk membandingkan apakah operan pertama lebih besar atau sama nilainya dari operan kedua. | 5 >= 2 (TRUE)<br>5 >= 5 (TRUE)<br>2 >= 4 (FALSE) |
+| Lebih kecil sama dengan | <=     | Digunakan untuk membandingkan apakah operan pertama lebih kecil atau sama nilainya dari operan kedua. | 5 <= 2 (FALSE)<br>5 <= 5 (TRUE)<br>2 <= 4 (TRUE) |
 
 ## Operator Logika
 
@@ -574,7 +574,13 @@ Operator logika digunakan untuk melakukan tes pada kondisi/ekspresi, apakah kond
 
 Operator-operator logika dalam bahasa C adalah sebagai berikut.
 
-**TABEL**
+| Operator                | Simbol | Keterangan                                                                                            | Nilai Kebenaran                                      |
+| ----------------------- | :----: | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Logical AND             | &&     | Operator AND akan menghasilkan nilai TRUE jika kedua operan mempunyai nilai TRUE.                     | 1 && 1 = 1<br>0 && 1 = 0<br>1 && 0 = 0<br>0 && 0 = 0 |
+| Logical OR              | ||     | Operator OR akan menghasilkan nilai TRUE jika salah satu operan mempunyai nilai TRUE.                 | 1 || 1 = 1<br>0 || 1 = 1<br>1 || 0 = 1<br>0 || 0 = 0 |
+| Logical NOT             | !      | Operator NOT digunakan untuk membalikkan kondisi, TRUE menjadi FALSE dan FALSE menjadi TRUE.          | !1 = 0<br>!0 = 1                                     |
+
+> Operator Logika **NOT** merupakan operator unary yang artinya hanya pada bekerja pada satu operan
 
 Operator logika pada umumnya digunakan bersamaan dengan operator relasional untuk melakukan tes pada ekspresi yang berhubungan dengan kebenaran suatu kondisi. Penggunaan paling umum adalah untuk melakukan percabangan (akan dipelajari di bagian selanjutnya).
 
@@ -596,7 +602,14 @@ Operator bitwise, seperti namanya digunakan untuk melakukan operasi pada dua ope
 
 Terdapat 6 jenis operator bitwise, yakni **AND**, **OR**, **XOR**, **COMPELEMENT**, **SHIFT LEFT**, dan **SHIFT RIGHT**. Untuk lebih memahami perbedaan cara kerja operator bitwise, perhatikan tabel berikut.
 
-**TABEL**
+| Operator                | Simbol | Keterangan                                                                                                                             |
+| ----------------------- | :----: | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Bitwise AND             | &      | Mengevaluasi bit dari dua operan. Menghasilkan 1 apabila keduanya 1, jika tidak menghasilkan nilai 0.                                  |
+| Bitwise OR              | |      | Mengevaluasi bit dari dua operan. Menghasilkan 1 apabila salah satu nilainya 1, jika keduanya 0, maka menghasilkan nilai 0.            |
+| Bitwise XOR             | ^      | Mengevaluasi bit dari dua operan. Menghasilkan 1 apabila bit pada kedua operan nilainya berbeda. Jika sama, maka menghasilkan nilai 0. |
+| Bitwise COMPLEMENT      | ~      | Membalik semua nilai bit, dari 1 menjadi 0 dan 0 menjadi 1 (dalam panjang bit).                                                        |
+| Bitwise SHIFT LEFT      | >>     | Menggeser bit ke kiri sebanyak n (operan kedua).                                                                                       |
+| Bitwise SHIFT RIGHT     | <<     | Menggeser bit ke kanan sebanyak n (operan kedua).                                                                                      |
 
 **Contoh penggunaan operator bitwise :**
 
@@ -657,3 +670,20 @@ Misal 12 dan 5. Representasi 12 dan 5 dalam basis biner adalah 12 = 1100 dan 5 =
     ```
 
     Bisa diperhatikan, bit paling kiri setelah digeser akan diisi oleh 0. Maka hasil dari 13 >> 2 = 3.
+
+## Operator Gabungan
+
+Operator Gabungan adalah operator yang terdiri dari gabungan dua operator. Tujuan dari operator gabungan adalah untuk mempersingkat penulisan kode. Berikut adalah operator gabungan dalam bahasa C.
+
+| Operator | Contoh    | Ekuivalen Dengan    |
+| :------: | :------:  | :--------------:    |
+| +=	   | `a += b`  |	`a = a + b`      |
+| -=	   | `a -= b`  |	`a = a - b`      |
+| *=	   | `a *= b`  |	`a = a * b`      |
+| /=	   | `a /= b`  |	`a = a / b`      |
+| %=	   | `a %= b`  |	`a = a % b`      |
+| &=	   | `a &= b`  |	`a = a & b`      |
+| |=	   | `a |= b`  |	`a = a | b`      |
+| ^=	   | `a ^= b`  |	`a = a ^ b`      |
+| >>=	   | `a >>= b` |	`a = a >> b`     |
+| <<=	   | `a <<= b` |	`a = a << b`     |
