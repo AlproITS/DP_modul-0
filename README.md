@@ -376,75 +376,75 @@ Bilangan bulat adalah bilangan yang tidak mempunyai nilai pecahan (real). Tipe d
             <th rowspan="2" align="center">Format Specifier</th>
         </tr>
         <tr>
-            <th>Min</th>
-            <th></th>
-            <th>Max</th>
+            <th align="center">Min</th>
+            <th align="center"></th>
+            <th align="center">Max</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>short</td>
-            <td>2</td>
-            <td></td>
-            <td>s.d</td>
-            <td></td>
-            <td></td>
+            <td align="center">2</td>
+            <td align="center"></td>
+            <td align="center">s.d</td>
+            <td align="center"></td>
+            <td align="center"></td>
         </tr>
         <tr>
             <td>unsigned short</td>
-            <td>2 - 4</td>
-            <td></td>
-            <td>s.d</td>
-            <td></td>
-            <td></td>
+            <td align="center">2 - 4</td>
+            <td align="center"></td>
+            <td align="center">s.d</td>
+            <td align="center"></td>
+            <td align="center"></td>
         </tr>
         <tr>
             <td>int</td>
-            <td>4</td>
-            <td>-2<sup>31</sup></td>
-            <td>s.d</td>
-            <td>2<sup>31</sup> - 1</td>
-            <td>%d</td>
+            <td align="center">4</td>
+            <td align="center">-2<sup>31</sup></td>
+            <td align="center">s.d</td>
+            <td align="center">2<sup>31</sup> - 1</td>
+            <td align="center">%d</td>
         </tr>
         <tr>
             <td>unsigned int</td>
-            <td>4</td>
-            <td>0</td>
-            <td>s.d</td>
-            <td>2<sup>32</sup> - 1</td>
-            <td>%u</td>
+            <td align="center">4</td>
+            <td align="center">0</td>
+            <td align="center">s.d</td>
+            <td align="center">2<sup>32</sup> - 1</td>
+            <td align="center">%u</td>
         </tr>
         <tr>
             <td>long</td>
-            <td>4</td>
-            <td>-2<sup>31</sup></td>
-            <td>s.d</td>
-            <td>2<sup>31</sup> - 1</td>
-            <td>%ld</td>
+            <td align="center">4</td>
+            <td align="center">-2<sup>31</sup></td>
+            <td align="center">s.d</td>
+            <td align="center">2<sup>31</sup> - 1</td>
+            <td align="center">%ld</td>
         </tr>
         <tr>
             <td>unsigned long</td>
-            <td>4</td>
-            <td>0</td>
-            <td>s.d</td>
-            <td>2<sup>32</sup> - 1</td>
-            <td>%lu</td>
+            <td align="center">4</td>
+            <td align="center">0</td>
+            <td align="center">s.d</td>
+            <td align="center">2<sup>32</sup> - 1</td>
+            <td align="center">%lu</td>
         </tr>
         <tr>
             <td>long long</td>
-            <td>8</td>
-            <td>-2<sup>63</sup></td>
-            <td>s.d</td>
-            <td>2<sup>63</sup> - 1</td>
-            <td>%lld</td>
+            <td align="center">8</td>
+            <td align="center">-2<sup>63</sup></td>
+            <td align="center">s.d</td>
+            <td align="center">2<sup>63</sup> - 1</td>
+            <td align="center">%lld</td>
         </tr>
         <tr>
             <td>unisgned long long</td>
-            <td>8</td>
-            <td>0</td>
-            <td>s.d</td>
-            <td>2<sup>64</sup> - 1</td>
-            <td>%llu</td>
+            <td align="center">8</td>
+            <td align="center">0</td>
+            <td align="center">s.d</td>
+            <td align="center">2<sup>64</sup> - 1</td>
+            <td align="center">%llu</td>
         </tr>
     </tbody>
 </table>
@@ -457,7 +457,30 @@ Jika diperhatikan, terdapat dua jenis tipe data antara lain signed dan unsigned.
 
 Bilangan real atau floating-point adalah bilangan yang mempunyai nilai pecahan (real). Tipe data bilangan real pada bahasa C diantaranya adalah sebagai berikut.
 
-**TABEL**
+<table>
+    <thead>
+        <tr>
+            <th align="center">Tipe Data</th>
+            <th align="center">Memori</th>
+            <th align="center">Jangkauan Nilai</th>
+            <th align="center">Format Specifier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>float</td>
+            <td align="center">4</td>
+            <td align="center">&plusmn;3.4 x 10<sup>&plusmn;38</sup> (estimasi)</td>
+            <td align="center">%f</td>
+        </tr>
+        <tr>
+            <td>double</td>
+            <td align="center">8</td>
+            <td align="center">&plusmn;1.7 x 10<sup>&plusmn;308</sup> (estimasi)</td>
+            <td align="center">%lf</td>
+        </tr>
+    </tbody>
+</table>
 
 Tipe data di atas digunakan untuk menyimpan data berupa bilanga real (floating-point)/bilangan berkoma. Misalnya, `2.35, -12.246, 0.005` dsb.
 
@@ -465,7 +488,30 @@ Tipe data di atas digunakan untuk menyimpan data berupa bilanga real (floating-p
 
 Karakter dalam bahasa C sebenarnya adalah bilangan bulat. Setiap karakter mempunyai kode tersendiri yang disebut dengan ASCII, dan kode tersebut diwakili oleh sebuah bilangan bulat.
 
-**TABEL**
+<table>
+    <thead>
+        <tr>
+            <th align="center">Tipe Data</th>
+            <th align="center">Memori</th>
+            <th align="center">Jangkauan Nilai</th>
+            <th align="center">Format Specifier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>char</td>
+            <td align="center">1</td>
+            <td align="center">-2<sup>7</sup> s.d 2<sup>7</sup> - 1</td>
+            <td align="center">%c</td>
+        </tr>
+        <tr>
+            <td>unsigned char</td>
+            <td align="center">1</td>
+            <td align="center">0 s.d 2<sup>8</sup> - 1</td>
+            <td align="center">%c</td>
+        </tr>
+    </tbody>
+</table>
 
 Penggunaan paling umum dari tipe data di atas adalah untuk merepresentasikan satu karakter. Misalnya, `‘A’`, `‘-‘`, dan sebagainya.
 
