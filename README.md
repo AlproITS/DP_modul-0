@@ -864,7 +864,65 @@ Operator Gabungan adalah operator yang terdiri dari gabungan dua operator. Tujua
 | /=	   | `a /= b`  |	`a = a / b`      |
 | %=	   | `a %= b`  |	`a = a % b`      |
 | &=	   | `a &= b`  |	`a = a & b`      |
-| |=	   | `a |= b`  |	`a = a | b`      |
+| \|=	   | `a \|= b` |	`a = a \| b`     |
 | ^=	   | `a ^= b`  |	`a = a ^ b`      |
 | >>=	   | `a >>= b` |	`a = a >> b`     |
 | <<=	   | `a <<= b` |	`a = a << b`     |
+
+## Operator Lain
+
+Selain operator-operator yang telah dijelaskan sebelumnya, terdapat beberapa operator lain yang terdapat pada bahasa C. Berikut penjelasannya.
+
+### Operator `sizeof()`
+
+Walaupun mempunyai bentuk seperti sebuah fungsi, namun dalam standardisasi bahasa C menganggap operator `sizeof()` sebagai operator. Kegunaan dari operator ini adalah untuk mengetahui besarnya alokasi memori sebuah operan (berupa variabel atau tipe data) dalam satuan byte.
+
+Contoh :
+
+```c
+sizeof(int);
+```
+
+### Operator Address-of (`&`)
+
+Operator ini mengembalikan alamat memori dari sebuah operan berupa variabel.
+
+Contoh :
+
+```c
+int var;
+printf("%d\n", &var);
+```
+
+### Operator Dereference (`*`)
+
+Berbeda dari operator address-of (`&`), operator deference (`*`) mengembalikan nilai dari variabel pointer (akan dijelaskan pada modul pointer).
+
+> Meskipun menggunakan simbol yang sama seperti operator perkalian, operator deference mempunyai fungsi yang benar-benar berbeda dari operator perkalian.
+
+### Operator Kondisional (` ? : `)
+
+Operator kondisial merupakan satu-satunya operator ternary (bekerja pada tiga operan) dalam bahasa C. Fungsi dari operator kondisional layaknya percabangan menggunakan `if - else` (akan dijelaskan pada modul percabangan).
+
+### Operator Koma (`,`)
+
+Tanda koma (`,`) sebagai operator dalam bahasa C merupakan binary operator yang akan mengevaluasi operan pertama, kemudian akan membuang hasilnya. Lalu mengevaluasi operan kedua dan akan mengembalikan nilainya.
+
+```c
+int number = (5, 23);   // number bernilai 23, bukan 5
+```
+
+Selain berfungsi sebagai operator, tanda koma (`,`) juga berfungsi sebagai separator (pemisah) antar statement. Misalkan saat deklarasi lebih dari satu variabel.
+
+```c
+int var1, var2, var3;   
+// Menggunakan tanda koma untuk memisahkan deklarasi tiap variabel
+```
+
+> Tidak semua statement dapat dipisahkan oleh tanda koma.
+
+### Operator Subscript (`[]`)
+
+Penggunaan paling umum operator ini adalah untuk melakukan pengaksesan terhadap elemen suatu array (akan dibahas pada modul array).
+
+_Operator lain yang belum ter-cover pada modul ini akan dibahas pada modul-modul selanjutnya._
