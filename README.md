@@ -367,7 +367,87 @@ Dalam bahasa C terdapat beberapa jenis tipe data. Diantaranya adalah tipe data d
 
 Bilangan bulat adalah bilangan yang tidak mempunyai nilai pecahan (real). Tipe data bilangan bulat pada bahasa C diantaranya sebagai berikut.
 
-**TABEL**
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2" align="center">Tipe Data</th>
+            <th rowspan="2" align="center">Memori</th>
+            <th colspan="3" align="center">Jangkauan Nilai</th>
+            <th rowspan="2" align="center">Format Specifier</th>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <th></th>
+            <th>Max</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>short</td>
+            <td>2</td>
+            <td></td>
+            <td>s.d</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>unsigned short</td>
+            <td>2 - 4</td>
+            <td></td>
+            <td>s.d</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>int</td>
+            <td>4</td>
+            <td>-2<sup>31</sup></td>
+            <td>s.d</td>
+            <td>2<sup>31</sup> - 1</td>
+            <td>%d</td>
+        </tr>
+        <tr>
+            <td>unsigned int</td>
+            <td>4</td>
+            <td>0</td>
+            <td>s.d</td>
+            <td>2<sup>32</sup> - 1</td>
+            <td>%u</td>
+        </tr>
+        <tr>
+            <td>long</td>
+            <td>4</td>
+            <td>-2<sup>31</sup></td>
+            <td>s.d</td>
+            <td>2<sup>31</sup> - 1</td>
+            <td>%ld</td>
+        </tr>
+        <tr>
+            <td>unsigned long</td>
+            <td>4</td>
+            <td>0</td>
+            <td>s.d</td>
+            <td>2<sup>32</sup> - 1</td>
+            <td>%lu</td>
+        </tr>
+        <tr>
+            <td>long long</td>
+            <td>8</td>
+            <td>-2<sup>63</sup></td>
+            <td>s.d</td>
+            <td>2<sup>63</sup> - 1</td>
+            <td>%lld</td>
+        </tr>
+        <tr>
+            <td>unisgned long long</td>
+            <td>8</td>
+            <td>0</td>
+            <td>s.d</td>
+            <td>2<sup>64</sup> - 1</td>
+            <td>%llu</td>
+        </tr>
+    </tbody>
+</table>
 
 Seperti namanya, tipe-tipe data di atas adalah tipe data yang digunakan untuk merepresentasikan bilangan bulat (positif dan negatif) dan bilangan 0. Misalnya, 0, -5, 12, -1, 200 dsb. **Perlu ditekankan** bahwa tipe-tipe data di atas tidak dapat digunakan untuk merepresentasikan bilangan floating-point (bilangan real).
 
