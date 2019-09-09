@@ -1,6 +1,6 @@
 ## Daftar Isi
 
-- [IDE (Intregated Development Environment)](#ide-intregated-development-environment)
+- [IDE (Integrated Development Environment)](#ide-intregated-development-environment)
 
 - [Pengenalan Bahasa C](#pengenalan-bahasa-c)
 
@@ -48,7 +48,7 @@
     + [Operator Gabungan](#operator-gabungan)
     + [Operator Lain](#operator-lain)
 
-# IDE (Intregated Development Environment)
+# IDE (Integrated Development Environment)
 
 Sebelum memulai menulis kode (atau **ngoding**), kita membutuhkan IDE untuk mempermudah proses penulisan kodenya. Apa itu IDE? Sederhananya, IDE atau Intregated Development Environment adalah aplikasi code editor yang sudah disertakan compiler didalamnya. Berikut daftar aplikasi IDE bahasa C yang dapat digunakan.
 
