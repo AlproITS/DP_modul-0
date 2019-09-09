@@ -1,6 +1,6 @@
 ## Daftar Isi
 
-- [IDE (Intregated Development Environment)]()
+- [IDE (Intregated Development Environment)](#ide-intregated-development-environment)
 
 - [Pengenalan Bahasa C](#pengenalan-bahasa-c)
 
@@ -52,8 +52,8 @@
 
 Sebelum memulai menulis kode (atau **ngoding**), kita membutuhkan IDE untuk mempermudah proses penulisan kodenya. Apa itu IDE? Sederhananya, IDE atau Intregated Development Environment adalah aplikasi code editor yang sudah disertakan compiler didalamnya. Berikut daftar aplikasi IDE bahasa C yang dapat digunakan.
 
-- (DevC++)[https://www.bloodshed.net/download.html]
-- (CodeBlocks)[http://www.codeblocks.org/downloads]
+- [DevC++](https://www.bloodshed.net/download.html)
+- [CodeBlocks](http://www.codeblocks.org/downloads)
 
 # Pengenalan Bahasa C
 
