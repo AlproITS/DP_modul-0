@@ -397,7 +397,7 @@ Bilangan bulat adalah bilangan yang tidak mempunyai nilai pecahan (real). Tipe d
             <td align="center">2</td>
             <td align="center">-2<sup>15</sup></td>
             <td align="center">s.d</td>
-            <td align="center">-2<sup>15</sup> - 1</td>
+            <td align="center">2<sup>15</sup> - 1</td>
             <td align="center">%hi</td>
         </tr>
         <tr>
@@ -405,7 +405,7 @@ Bilangan bulat adalah bilangan yang tidak mempunyai nilai pecahan (real). Tipe d
             <td align="center">2 - 4</td>
             <td align="center">0</td>
             <td align="center">s.d</td>
-            <td align="center">-2<sup>16</sup> - 1</td>
+            <td align="center">2<sup>16</sup> - 1</td>
             <td align="center">%hu</td>
         </tr>
         <tr>
