@@ -1,5 +1,7 @@
 ## Daftar Isi
------------------------
+
+- [IDE (Intregated Development Environment)]()
+
 - [Pengenalan Bahasa C](#pengenalan-bahasa-c)
 
     + [Statement](#statement)
@@ -45,6 +47,13 @@
     + [Operator Bitwise](#operator-bitwise)
     + [Operator Gabungan](#operator-gabungan)
     + [Operator Lain](#operator-lain)
+
+# IDE (Intregated Development Environment)
+
+Sebelum memulai menulis kode (atau **ngoding**), kita membutuhkan IDE untuk mempermudah proses penulisan kodenya. Apa itu IDE? Sederhananya, IDE atau Intregated Development Environment adalah aplikasi code editor yang sudah disertakan compiler didalamnya. Berikut daftar aplikasi IDE bahasa C yang dapat digunakan.
+
+- (DevC++)[https://www.bloodshed.net/download.html]
+- (CodeBlocks)[http://www.codeblocks.org/downloads]
 
 # Pengenalan Bahasa C
 
@@ -396,7 +405,7 @@ Bilangan bulat adalah bilangan yang tidak mempunyai nilai pecahan (real). Tipe d
             <td align="center">2 - 4</td>
             <td align="center">0</td>
             <td align="center">s.d</td>
-            <td align="center">-2<sup>15</sup> - 1</td>
+            <td align="center">-2<sup>16</sup> - 1</td>
             <td align="center">%hu</td>
         </tr>
         <tr>
@@ -927,3 +936,5 @@ int var1, var2, var3;
 Penggunaan paling umum operator ini adalah untuk melakukan pengaksesan terhadap elemen suatu array (akan dibahas pada modul array).
 
 _Operator lain yang belum ter-cover pada modul ini akan dibahas pada modul-modul selanjutnya._
+
+[< Kembali ke Daftar Isi](#daftar-isi)
