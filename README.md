@@ -44,6 +44,7 @@
     + [Operator Logika](#operator-logika)
     + [Operator Bitwise](#operator-bitwise)
     + [Operator Gabungan](#operator-gabungan)
+    + [Operator Lain](#operator-lain)
 
 # Pengenalan Bahasa C
 
@@ -371,7 +372,7 @@ Bilangan bulat adalah bilangan yang tidak mempunyai nilai pecahan (real). Tipe d
     <thead>
         <tr>
             <th rowspan="2" align="center">Tipe Data</th>
-            <th rowspan="2" align="center">Memori</th>
+            <th rowspan="2" align="center">Memori (Byte)</th>
             <th colspan="3" align="center">Jangkauan Nilai</th>
             <th rowspan="2" align="center">Format Specifier</th>
         </tr>
@@ -385,18 +386,18 @@ Bilangan bulat adalah bilangan yang tidak mempunyai nilai pecahan (real). Tipe d
         <tr>
             <td>short</td>
             <td align="center">2</td>
-            <td align="center"></td>
+            <td align="center">-2<sup>15</sup></td>
             <td align="center">s.d</td>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center">-2<sup>15</sup> - 1</td>
+            <td align="center">%hi</td>
         </tr>
         <tr>
             <td>unsigned short</td>
             <td align="center">2 - 4</td>
-            <td align="center"></td>
+            <td align="center">0</td>
             <td align="center">s.d</td>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center">-2<sup>15</sup> - 1</td>
+            <td align="center">%hu</td>
         </tr>
         <tr>
             <td>int</td>
@@ -461,7 +462,7 @@ Bilangan real atau floating-point adalah bilangan yang mempunyai nilai pecahan (
     <thead>
         <tr>
             <th align="center">Tipe Data</th>
-            <th align="center">Memori</th>
+            <th align="center">Memori (Byte)</th>
             <th align="center">Jangkauan Nilai</th>
             <th align="center">Format Specifier</th>
         </tr>
@@ -492,7 +493,7 @@ Karakter dalam bahasa C sebenarnya adalah bilangan bulat. Setiap karakter mempun
     <thead>
         <tr>
             <th align="center">Tipe Data</th>
-            <th align="center">Memori</th>
+            <th align="center">Memori (Byte)</th>
             <th align="center">Jangkauan Nilai</th>
             <th align="center">Format Specifier</th>
         </tr>
@@ -728,7 +729,7 @@ Terdapat dua cara untuk menggunakan operator ini.
     ```c
     int a, b;  
     a = 5;  
-    b = a++; // Nilai b sekarang adalah 6  
+    b = a++; // Nilai b sekarang adalah 5  
     a = b--; // Nilai a sekarang adalah 5 
     ```
 
@@ -789,45 +790,45 @@ Terdapat 6 jenis operator bitwise, yakni **AND**, **OR**, **XOR**, **COMPELEMENT
 | Bitwise OR              | \|     | Mengevaluasi bit dari dua operan. Menghasilkan 1 apabila salah satu nilainya 1, jika keduanya 0, maka menghasilkan nilai 0.            |
 | Bitwise XOR             | ^      | Mengevaluasi bit dari dua operan. Menghasilkan 1 apabila bit pada kedua operan nilainya berbeda. Jika sama, maka menghasilkan nilai 0. |
 | Bitwise COMPLEMENT      | ~      | Membalik semua nilai bit, dari 1 menjadi 0 dan 0 menjadi 1 (dalam panjang bit).                                                        |
-| Bitwise SHIFT LEFT      | >>     | Menggeser bit ke kiri sebanyak n (operan kedua).                                                                                       |
-| Bitwise SHIFT RIGHT     | <<     | Menggeser bit ke kanan sebanyak n (operan kedua).                                                                                      |
+| Bitwise SHIFT LEFT      | <<     | Menggeser bit ke kiri sebanyak n (operan kedua).                                                                                       |
+| Bitwise SHIFT RIGHT     | >>     | Menggeser bit ke kanan sebanyak n (operan kedua).                                                                                      |
 
 **Contoh penggunaan operator bitwise :**
 
-Misal 12 dan 5. Representasi 12 dan 5 dalam basis biner adalah 12 = 1100 dan 5 = 0101. Maka, operasi bitwise adalah sebagai berikut.
+Misal 12 dan 5. Representasi 12 dan 5 dalam basis biner adalah 12 = (1100) dan 5 = (0101). Maka, operasi bitwise adalah sebagai berikut.
 
 + **Bitwise AND**
 
     ```
-    12 = 1100
-     5 = 0101
-    ---------- &
-     4 = 0100
+    12 = (1100)
+     5 = (0101)
+    ------------ &
+     4 = (0100)
     ```
 
 + **Bitwise OR**
 
     ```
-    12 = 1100
-     5 = 0101
-    ---------- | 
-    13 = 1101
+    12 = (1100)
+     5 = (0101)
+    ------------ | 
+    13 = (1101)
     ```
 
 + **Bitwise XOR**
 
     ```
-    12 = 1100
-     5 = 0101
-    ---------- ^
-     9 = 1001
+    12 = (1100)
+     5 = (0101)
+    ------------ ^
+     9 = (1001)
     ```
 
 + **Bitwise COMPLEMENT**
 
     ```
-     12 = 1100
-    ~12 = 0011
+     12 = (1100)
+    ~12 = (0011)
     ```
 
 + **Bitwise SHIFT LEFT**
@@ -835,8 +836,8 @@ Misal 12 dan 5. Representasi 12 dan 5 dalam basis biner adalah 12 = 1100 dan 5 =
     Misal kita hendak menggeser bit bilangan 13 ke kiri sebanyak 2, maka 13 << 2.
 
     ```
-         13 = 001101
-    13 << 2 = 110100 
+         13 = (001101)
+    13 << 2 = (110100) 
     ```
 
     Bisa diperhatikan, bit paling kanan setelah digeser akan diisi oleh 0. Maka hasil dari 13 << 2 = 52.
@@ -846,8 +847,8 @@ Misal 12 dan 5. Representasi 12 dan 5 dalam basis biner adalah 12 = 1100 dan 5 =
     Misal kita hendak menggeser bit bilangan 13 ke kanan sebanyak 2, maka 13 >> 2.
 
     ```
-         13 = 001101
-    13 >> 2 = 000011
+         13 = (001101)
+    13 >> 2 = (000011)
     ```
 
     Bisa diperhatikan, bit paling kiri setelah digeser akan diisi oleh 0. Maka hasil dari 13 >> 2 = 3.
